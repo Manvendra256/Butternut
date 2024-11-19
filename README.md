@@ -1,4 +1,4 @@
-# Flashcard Recommendation App
+# Flashcard Recommendation App (Butternut)
 
 <details open="open">
 <summary>Table of Contents</summary>
@@ -19,9 +19,9 @@
 <tr>
 <td>
 
-This app helps people create digital flashcards and memorize information by using two proven techniques: Active recall and Spaced repetition. I built it as 
-I couldn't find any other good and **free** alternatives in this category. It uses ***weighted random sampling*** to recommend the next flashcard to the user. The 
-weight in this case is simply the users confidence level with that particular flashcard. There are three levels of heirarchy to aid in the organization of flashcards (the heirarchy is take from Brainscape). 
+This app helps users create digital flashcards and memorize information by leveraging two proven learning techniques: Active recall and Spaced repetition. 
+I built it since I couldn't find any other good and **free** alternatives in this category. It uses ***weighted random sampling*** to recommend the next flashcard to the user. The 
+weight for a given card is the users confidence on their ability to recall info on that card. It also features a hierarchical structure inspired by Brainscape.
 At the top level, we have a _class_. Under class, we have _decks_ and under a deck we have _flashcards_. For example **Geography** could be a _class_. Under **Geography**, 
 we could have multiple decks, for example one for each country (let's assume **USA**). Under **USA**, we could have multiple flashcards containing questions/info around 
 USA geography. 
@@ -40,26 +40,50 @@ Other apps in this category are:
 - Kotlin
 - Jetpack Compose
 
-## Visualisations
-### DFS
-![alt text](gifs/dfs.gif)
-
 ## Getting Started
 ### Prerequisites
 An android mobile and android studio. This is not currently hosted on Playstore so people interested in trying it out will need to install it via android studio.
 ### Usage
-#### Create a Class.
-
-#### Create a Deck
 
 #### Create a Flashcard
+To create a flashcard we need to follow the steps outlined below (in that specific order):
+1. Create a Class
+2. Create a Deck
+3. Create a Flashcard
 
-#### Revise all flashcards.
-
-#### Revise flashcards within a class.
-
-#### Revise flashcards within a deck.
+Create a Class.                       | Create a Deck                      | Create a Flashcard
+--------------------------------------|------------------------------------|----------------------
+![alt text](gifs/create_class.gif)    | ![alt text](gifs/create_deck.gif) | ![alt text](gifs/create_flashcard.gif) 
 
 
+#### Revising Flashcards
+
+All Flashcards.                       | Flashcards within a class          | Flashcards within a deck
+--------------------------------------|------------------------------------|----------------------
+![alt text](gifs/revise_all.gif)    | ![alt text](gifs/revision_class.gif) | ![alt text](gifs/revision_deck.gif) 
+
+#### Upload/Download feature
+
+<table align="center">
+    <tr>
+      <td align="center">
+        Upload
+      </td>
+      <td align="center">
+        Download
+      </td>
+    </tr>
+    <tr>
+    <td>
+     <img  src="gifs/upload.gif"> 
+    </td>
+    <td>
+      <img  src="gifs/download.gif"> 
+    </td>
+    </tr>
+</table>
 
 ## Acknowledgements
+The development of this project was aided by the following online resources.
+- https://developer.android.com (for all Compose tutorials)
+- https://github.com/dec0dOS/amazing-github-template (for this README template)
