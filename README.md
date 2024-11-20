@@ -42,11 +42,11 @@ Other apps in this category are:
 
 ## Getting Started
 ### Prerequisites
-An android mobile and android studio. This is not currently hosted on Playstore so people interested in trying it out will need to install it via android studio.
+An android mobile and android studio. This is not currently available on Playstore so people interested in trying it out will need to install it via android studio.
 ### Usage
 
 #### Create a Flashcard
-To create a flashcard we need to follow the steps outlined below (in that specific order):
+To create a flashcard we need to follow the steps outlined below:
 1. Create a Class
 2. Create a Deck
 3. Create a Flashcard
